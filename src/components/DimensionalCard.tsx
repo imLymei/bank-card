@@ -21,11 +21,11 @@ export default function DimensionalCard() {
 
 	return (
 		<div
-			className='w-[50vw] h-[50vh] flex flex-col justify-between p-16 border border-neutral-800 bg-gradient-to-br from-purple-500 via-blue-500 to-orange-500 shadow-lg shadow-white/20 rounded-xl transition-transform duration-75'
+			className='w-[50vw] h-[50vh] flex flex-col justify-between p-16 border border-neutral-800 bg-gradient-to-br from-purple-500 via-blue-500 to-orange-500 shadow-2xl shadow-white/50 rounded-xl transition-transform duration-75'
 			style={{
 				transform: `rotate3d(0,1,0,${xPercentage * maxDegree - halfDegree}deg) rotate3d(-1,0,0,${
 					yPercentage * maxDegree - halfDegree
-				}deg) rotate3d(0,0,${heightSide},${xPercentage * maxDegreeYarn - halfDegreeYarn}deg)`,
+				}deg) rotate3d(0,0,1,${xPercentage * maxDegreeYarn - halfDegreeYarn}deg)`,
 			}}>
 			<p className='text-right text-4xl font-bold'>HIGH BANK</p>
 			<div className='w-16 h-16 grid grid-cols-2 p-1 gap-1 bg-yellow-300 rounded-xl'>
