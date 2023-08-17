@@ -29,7 +29,7 @@ export default function DimensionalCard() {
 					perspective: '1000px',
 					transform: `rotate3d(0,1,0,${xPercentage * maxDegree - halfDegree}deg) rotate3d(-1,0,0,${
 						yPercentage * maxDegree - halfDegree
-					}deg) rotate3d(0,0,1,${(xPercentage * maxDegreeYarn - halfDegreeYarn) * -heightSide}deg)`,
+					}deg) rotate3d(0,0,1,${xPercentage * maxDegreeYarn - halfDegreeYarn}deg)`,
 				}}>
 				<p className='text-right text-4xl font-bold'>HIGH BANK</p>
 				<div className='w-16 h-16 grid grid-cols-2 p-1 gap-1 bg-yellow-300 rounded-xl'>
@@ -54,11 +54,11 @@ export default function DimensionalCard() {
 				<p className='text-xl font-mono tracking-widest'>Lola Price</p>
 			</div>
 			<div
-				className='absolute -bottom-1/4 w-[120%] bg-gradient-radial from-black/30 to-70% transition duration-75 -z-50'
+				className='absolute -bottom-1/4 w-[110%] bg-gradient-radial from-black/30 to-70% transition duration-75 -z-50'
 				style={{
 					height: `${2 + Math.abs(yPercentage - 0.5) * 8}%`,
-					transform: `rotate3d(0,1,0,${xPercentage * maxDegree - halfDegree}deg) rotate3d(0,0,1,${
-						(xPercentage * maxDegreeYarn - halfDegreeYarn) * -heightSide * 0.75
+					transform: `rotate3d(0,1,0,${xPercentage * maxDegree - halfDegree}deg) rotate3d(0,0,-1,${
+						(xPercentage * maxDegreeYarn - halfDegreeYarn) * 0.2
 					}deg)`,
 				}}
 			/>
