@@ -54,9 +54,9 @@ export default function DimensionalCard() {
 				<p className='text-xl font-mono tracking-widest'>Lola Price</p>
 			</div>
 			<div
-				className='absolute -bottom-1/4 w-[120%] bg-gradient-radial from-black/30 to-60% transition duration-75 -z-50'
+				className='absolute -bottom-1/4 w-[120%] bg-gradient-radial from-black/30 to-70% transition duration-75 -z-50'
 				style={{
-					height: `${2 + Math.abs(yPercentage - 0.5) * 15}%`,
+					height: `${2 + Math.abs(yPercentage - 0.5) * 8}%`,
 					transform: `rotate3d(0,1,0,${xPercentage * maxDegree - halfDegree}deg) rotate3d(0,0,1,${
 						(xPercentage * maxDegreeYarn - halfDegreeYarn) * -heightSide * 0.75
 					}deg)`,
