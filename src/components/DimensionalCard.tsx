@@ -13,10 +13,6 @@ export default function DimensionalCard() {
 	const maxDegreeYarn = 10;
 	const halfDegreeYarn = 5;
 
-	const middleScreen = window.innerHeight / 2;
-
-	const heightSide = yPercentage * 2 - 1;
-
 	/* rotate3d(0,1,0,${xPercentage * maxDegree - halfDegree}deg) rotate3d(-1,0,0,${
 					yPercentage * maxDegree - halfDegree
 				}deg) rotate3d(0,0,1,${xPercentage * maxDegreeYarn - halfDegreeYarn}deg) */
