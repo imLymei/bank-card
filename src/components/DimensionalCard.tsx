@@ -1,12 +1,17 @@
 'use client';
 
 import { useMouse } from '@lymei/hooks';
+import { useEffect, useState } from 'react';
 
 export default function DimensionalCard() {
 	const mousePosition = useMouse();
+	const [xPercentage, setXPercentage] = useState(0);
+	const [yPercentage, setYPercentage] = useState(0);
 
-	const xPercentage = mousePosition.x / window.innerWidth;
-	const yPercentage = mousePosition.y / window.innerHeight;
+	useEffect(() => {
+		setXPercentage(mousePosition.x / window.innerWidth);
+		setYPercentage(mousePosition.y / window.innerHeight);
+	}, [mousePosition]);
 
 	const maxDegree = 45;
 	const halfDegree = 22.5;
