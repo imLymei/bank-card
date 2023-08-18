@@ -29,11 +29,18 @@ export default function Home() {
 					Documentation
 				</button>
 			</div>
-			<Link
-				href={'https://github.com/imLymei'}
-				className='absolute bottom-2 right-2 underline underline-offset-4 decoration-solid decoration-neutral-300 hover:decoration-neutral-400 text-neutral-300 hover:text-neutral-400 transition-all duration-300'>
-				@imLymei
-			</Link>
+			<div className='flex gap-8 absolute bottom-2 right-2'>
+				<Link
+					href={'https://github.com/imLymei'}
+					className='underline underline-offset-4 decoration-solid decoration-neutral-300 hover:decoration-neutral-400 text-neutral-300 hover:text-neutral-400 transition-all duration-300'>
+					@imLymei
+				</Link>
+				<Link
+					href={'https://github.com/Sakyie'}
+					className='underline underline-offset-4 decoration-solid decoration-neutral-300 hover:decoration-neutral-400 text-neutral-300 hover:text-neutral-400 transition-all duration-300'>
+					@Sakyie
+				</Link>
+			</div>
 		</main>
 	);
 }
